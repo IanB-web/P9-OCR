@@ -83,23 +83,43 @@
           <div class="carousel-inner">
             <div class="carousel-item active">
               <img
-                src="./assets/images/slider/ryoji-iwata.jpg"
+                srcset="
+                  ./assets/images/slider/ryoji-iwata-1920w.jpg 1920w,
+                  ./assets/images/slider/ryoji-iwata-650w.jpg 650w
+                "
+                sizes="(max-width: 650px) 100vw, 1920px"
                 class="d-block w-100"
-                alt="..."
+                src="./assets/images/slider/ryoji-iwata-1920w.jpg"
+                alt="ryoji iwata"
+                loading="lazy"
               />
             </div>
+
             <div class="carousel-item">
               <img
-                src="./assets/images/slider/nicholas-green.jpg"
+                srcset="
+                  ./assets/images/slider/edward-cisneros-1920w.jpg 1920w,
+                  ./assets/images/slider/edward-cisneros-650w.jpg 650w
+                "
+                sizes="(max-width: 650px) 100vw, 1920px"
                 class="d-block w-100"
-                alt="..."
+                src="./assets/images/slider/edward-cisneros-1920w.jpg"
+                alt="edward cisneros"
+                loading="lazy"
               />
             </div>
+
             <div class="carousel-item">
               <img
-                src="./assets/images/slider/edward-cisneros.jpg"
+                srcset="
+                  ./assets/images/slider/nicholas-green-1920w.jpg 1920w,
+                  ./assets/images/slider/nicholas-green-650w.jpg 650w
+                "
+                sizes="(max-width: 650px) 100vw, 1920px"
+                src="./assets/images/slider/nicholas-green-1920w.jpg"
                 class="d-block w-100"
-                alt="..."
+                alt="nicholas green"
+                loading="lazy"
               />
             </div>
           </div>
