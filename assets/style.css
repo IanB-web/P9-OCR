@@ -41,7 +41,69 @@ body {
 .social-link img {
 	width: 20px;
 }
+#carousel {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
+	width: 100%;
+	height: 100%;
+	position: relative;
+	
+}
+.carousel__img {
+	position: relative;
+	width: 100%;
+	z-index: -1;
+	object-fit: cover;
+	object-position: center;
+}
 
+/* Gestion des fleches du carrousel */
+#carousel .arrow {
+	position: absolute;
+	cursor: pointer;
+	opacity: 0.4;
+	transition: all 0.3s ease;
+}
+
+#carousel .arrow:hover {
+	transform: scale(1.1);
+	opacity: 1;
+	transition: all 0.3s ease;
+}
+#carousel .arrow:active {
+	transform: scale(1.2);
+}
+#carousel .arrow_left {
+	left: 20px;
+}
+#carousel .arrow_right {
+	right: 20px;
+}
+/* Gestion des points du carrousel */
+.dots {
+	position: absolute;
+	bottom: 5%;
+	display: flex;
+}
+.dot {
+	margin-inline: 5px;
+	width: 30px;
+	height: 4px;
+	background-color: #fff;
+	opacity: 0.5;
+	border:0;
+	
+}
+.dot:hover{
+	cursor: pointer;
+}
+.dot_selected {
+	background-color: #fff;
+	opacity:1;
+}
+/* Fin du code CSS pour le carousel */
 #about {
 	display: flex;
 	background-color: #F6D2B8;

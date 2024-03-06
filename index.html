@@ -19,16 +19,22 @@
       rel="stylesheet"
     />
 
-    <script defer src="./assets/bootstrap/bootstrap.bundle.js"></script>
-    <script
+    <!-- <script defer src="./assets/bootstrap/bootstrap.bundle.js"></script>-->
+   
+
+     <script
       defer
       src="https://code.jquery.com/jquery-3.4.1.min.js"
       integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo="
       crossorigin="anonymous"
-    ></script>
+    ></script> 
 
     <script defer src="./assets/maugallery.js"></script>
-    <script defer src="./assets/scripts.js"></script>
+    <script defer src="./assets/scripts.js"></script> 
+    <script defer src="./assets/carrousel.min.js"></script>
+
+    <link rel="preload" fetchpriority="high" as="image" href="./assets/images/slider/ryoji-iwata-650w.jpg" type="image/jpg">
+
   </head>
 
   <body>
@@ -52,7 +58,16 @@
           </ul>
         </div>
       </div>
-      <div id="header">
+      <div id="carousel" class="carousel">
+        <img class="carousel__img" class="d-block w-100">
+    
+        <img src="./assets/images/slider/arrow_left.png" class="arrow_left arrow" id="left" alt="left arrow">
+        <img src="./assets/images/slider/arrow_right.png" class="arrow_right arrow" id="right" alt="right arrow">
+    
+        <div class="dots">
+        </div>
+      </div>
+      <!-- <div id="header">
         <div
           id="carouselExampleIndicators"
           class="carousel slide"
@@ -142,7 +157,7 @@
             <span class="visually-hidden">Next</span>
           </button>
         </div>
-      </div>
+      </div> -->
     </header>
     <main>
       <div id="about">
